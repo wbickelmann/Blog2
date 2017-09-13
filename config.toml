@@ -6,7 +6,7 @@ disqusShortname = "username" # delete this to disable disqus comments
 
 [params]
     author = "Calin Tataru"
-    description = "Personal blog theme powered by Hugo"
+    description = "secondary destination for my homework"
     githubUsername = "#"
     accent = "red"
     showBorder = true
