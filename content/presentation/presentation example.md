@@ -10,7 +10,7 @@ Tags:
 - felis
 - venetais
 Thumbnail: /img/ullamcorper.jpg-200x200.jpg
-Title: 'Aenean: Odio orci MMXII'
+Title: 'Presentation Example'
 Topics:
 - Rhoncus
 - Molestie

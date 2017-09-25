@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 20YY, Your Name Here; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 24 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Nov 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Amet</title>
-      <link>/tags/amet/</link>
-      <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/amet/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Felis</title>
@@ -40,15 +31,6 @@
     </item>
     
     <item>
-      <title>Pretium</title>
-      <link>/tags/pretium/</link>
-      <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/pretium/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R Markdown</title>
       <link>/tags/r-markdown/</link>
       <pubDate>Mon, 25 Sep 2017 21:13:14 -0500</pubDate>
@@ -63,24 +45,6 @@
       <pubDate>Mon, 25 Sep 2017 21:13:14 -0500</pubDate>
       
       <guid>/tags/regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rutrum</title>
-      <link>/tags/rutrum/</link>
-      <pubDate>Fri, 11 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/rutrum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Velit</title>
-      <link>/tags/velit/</link>
-      <pubDate>Wed, 23 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/velit/</guid>
       <description></description>
     </item>
     

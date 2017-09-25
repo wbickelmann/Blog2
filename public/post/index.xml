@@ -25,19 +25,6 @@ HR_vs_SO&amp;lt;-inner_join(df,Master,by=c(&amp;quot;playerID&amp;quot;))%&amp;g
     </item>
     
     <item>
-      <title>Houston...</title>
-      <link>/post/accumsan-ultricies-turpis/</link>
-      <pubDate>Wed, 23 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/post/accumsan-ultricies-turpis/</guid>
-      <description>   Image via CrunchBase   This is a test post
- Messing about with new styles here I can type a list like this.
- This is using an MD file format
-1. Header with one pound sign Down here a nunch of videos
-iMac - 1998   iPod – 2001   iPhone – 2007   </description>
-    </item>
-    
-    <item>
       <title>Normal Distribution</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
