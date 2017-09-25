@@ -1,6 +1,6 @@
-baseurl = "http://nixon.example.com/"
+baseurl = "https://analyticstalk.netlify.com/"
 theme = "nixon"
-title = "Nixon Theme"
+title = "Analytics Talk"
 languageCode = "en-us"
 disqusShortname = "nixon.example"
 copyright = "Copyright (c) 20YY, Your Name Here; all rights reserved."
