@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R Markdown on Minimal</title>
+    <title>R Markdown on Nixon Theme</title>
     <link>/tags/r-markdown/</link>
-    <description>Recent content in R Markdown on Minimal</description>
+    <description>Recent content in R Markdown on Nixon Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <copyright>Copyright (c) 20YY, Your Name Here; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 25 Sep 2017 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello R Markdown</title>
+      <title>Visualization Practice</title>
+      <link>/post/interactive_viz/</link>
+      <pubDate>Mon, 25 Sep 2017 21:13:14 -0500</pubDate>
+      
+      <guid>/post/interactive_viz/</guid>
+      <description>library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)library(ggiraph)First to Wrangel Data
+Batting%&amp;gt;%group_by(playerID)%&amp;gt;%summarize(Career_HR=sum(HR),Career_SO=sum(SO))%&amp;gt;%filter(Career_HR&amp;gt;=400)-&amp;gt;dfNow an Inner Join
+HR_vs_SO&amp;lt;-inner_join(df,Master,by=c(&amp;quot;playerID&amp;quot;))%&amp;gt;%select(nameFirst,nameLast,Career_HR,Career_SO)———————————————————————————-Next to make it a visualization
+g&amp;lt;-ggplot()+geom_point(data=HR_vs_SO, aes(x=Career_SO,y=Career_HR)) +ggtitle(&amp;quot;Career Homeruns vs. Strikeouts for Great Hitters&amp;quot;) +xlab(&amp;quot;Strikeouts&amp;quot;) +ylab(&amp;quot;Homeruns&amp;quot;)gNow to make it interactive</description>
+    </item>
+    
+    <item>
+      <title>Normal Distribution</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <description>R MarkdownThe normal distribution is an extremely important concept for statistics. The assumption of a normal distribution is the only thing that allows for a number of statistical techniques, such as linear regression.
+The greater the number of observations, the more likely the distribution will look normal.
+For example a varible with only 30 observations looks a little off:
+plot(density(rnorm(30)))The plot above looks a little off. It seems a little skewed to the right.</description>
     </item>
     
   </channel>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Velit on Nixon Theme</title>
+    <link>/tags/velit/</link>
+    <description>Recent content in Velit on Nixon Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 20YY, Your Name Here; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 23 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/velit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Houston...</title>
+      <link>/post/accumsan-ultricies-turpis/</link>
+      <pubDate>Wed, 23 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/accumsan-ultricies-turpis/</guid>
+      <description>   Image via CrunchBase   This is a test post
+ Messing about with new styles here I can type a list like this.
+ This is using an MD file format
+1. Header with one pound sign Down here a nunch of videos
+iMac - 1998   iPod – 2001   iPhone – 2007   </description>
+    </item>
+    
+  </channel>
+</rss>

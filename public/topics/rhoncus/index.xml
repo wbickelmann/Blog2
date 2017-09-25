@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rhoncus on Nixon Theme</title>
+    <link>/topics/rhoncus/</link>
+    <description>Recent content in Rhoncus on Nixon Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 20YY, Your Name Here; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 29 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/topics/rhoncus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aenean: Odio orci MMXII</title>
+      <link>/presentation/aenean-odio-orci-mmxii/</link>
+      <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/presentation/aenean-odio-orci-mmxii/</guid>
+      <description>&lt;p&gt;Trying to figure out the purpose of this &amp;ldquo;presentation&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Houston...</title>
+      <link>/post/accumsan-ultricies-turpis/</link>
+      <pubDate>Wed, 23 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/accumsan-ultricies-turpis/</guid>
+      <description>   Image via CrunchBase   This is a test post
+ Messing about with new styles here I can type a list like this.
+ This is using an MD file format
+1. Header with one pound sign Down here a nunch of videos
+iMac - 1998   iPod – 2001   iPhone – 2007   </description>
+    </item>
+    
+  </channel>
+</rss>

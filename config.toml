@@ -1,61 +1,55 @@
-baseURL = "https://grader-checkout-10763.netlify.com/"
+baseurl = "http://nixon.example.com/"
+theme = "nixon"
+title = "Nixon Theme"
 languageCode = "en-us"
-title = "wILL'S dATA Science Blog"
-theme = "minimal"
-disqusShortname = "username" # delete this to disable disqus comments
+disqusShortname = "nixon.example"
+copyright = "Copyright (c) 20YY, Your Name Here; all rights reserved."
+MetaDataFormat = "yaml"
+
+# used by Hugo shortcodes
+GoogleAnalytics = "UA-XXXXX-Y"
+
+# note that the theme expects author both here and in the
+# parameters section
+[author]
+    name = "N. Ixon"
+
+# used by the theme
+[indexes]
+    tag = "tags"
+    topic = "topics"
 
 [params]
-    author = "Calin Tataru"
-    description = "secondary destination for my homework"
-    githubUsername = "#"
-    accent = "red"
-    showBorder = true
-    backgroundColor = "white"
-    font = "Raleway" # should match the name on Google Fonts!
-    highlight = true
-    highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+	copyright_years = "2016"
+	css_file = "/css/nixon.css"
+	domain_name = "nixon.example.com"
+	personal_site = "https://nixon.example.com"
 
-[[menu.main]]
-    url = "/"
-    name = "Home"
-    weight = 1
+	[params.author]
+		name = "N. Ixon"
+		# The three quotes allow the biography to span
+		# multiple lines. Must end with three, too.
+		short_bio = """
+Fusce pulvinar dictum magna, vel rutrum nunc tempor non. Curabitur aliquam <a href="http://mdhender.com">Laci Nia</a> justo. Pellentesque fringilla libero eget suscipit malesuada.
 
-[[menu.main]]
-    url = "/post/"
-    name = "Posts"
-    weight = 2
+Ut pharetra pellentesque eros non fringilla. Duis vel augue at ex semper lobortis vitae in ipsum. Suspendisse et congue libero."""
 
-[[menu.main]]
-    url = "/project/"
-    name = "Projects"
-    weight = 3
+	[params.facebook]
+		account = "nixon.example"
+	[params.feedburner]
+		account = "nixon.example"
+	[params.github]
+		account = "nixon.example"
+	[params.googleplus]
+		account = ""
+	[params.linkedin]
+		account = "nixon.example"
+		source  = "nixon.example"
+	[params.twitter]
+		account = "nixon.example"
+	[params.slideshare]
+		account = "nixon.example"
 
-# Social icons to be shown on the right-hand side of the navigation bar
-# The "name" field should match the name of the icon to be used
-# The list of available icons can be found at http://fontawesome.io/icons/
-
-[[menu.icon]]
-    url = "mailto:me@example.com"
-    name = "envelope-o"
-    weight = 1
-
-[[menu.icon]]
-    url = "https://github.com/username/"
-    name = "github"
-    weight = 2
-
-[[menu.icon]]
-    url = "https://twitter.com/username/"
-    name = "twitter"
-    weight = 3
-
-[[menu.icon]]
-    url = "https://www.linkedin.com/in/username/"
-    name = "linkedin"
-    weight = 4
-
-[[menu.icon]]
-    url = "https://www.stackoverflow.com/username/"
-    name = "stack-overflow"
-    weight = 5
+	[params.license]
+		url = "http://creativecommons.org/licenses/by/3.0/"
+		attribution = "Some rights reserved"
