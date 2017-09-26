@@ -86,5 +86,16 @@ plot(density(rnorm(30)))The plot above looks a little off. It seems a little sk
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Histograms and Barcharts</title>
+      <link>/post/bar_hist_charts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/bar_hist_charts/</guid>
+      <description>library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)library(ggiraph)library(Lahman)HistogramVisualization
+df&amp;lt;-Master%&amp;gt;%select(weight)now to make a plot
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.## Warning: Removed 854 rows containing non-finite values (stat_bin).Now to get rid of the NAs that are screwing with the results</description>
+    </item>
+    
   </channel>
 </rss>

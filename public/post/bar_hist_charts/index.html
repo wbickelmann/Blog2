@@ -15,8 +15,8 @@
  
 <meta property="og:type" content="article"/>
 <meta property="og:description" content=""/>
-<meta property="og:title" content="Viz : nixon.example.com"/>
-<meta property="og:site_name" content="nixon.example.com is N. Ixon"/>
+<meta property="og:title" content="Histograms and Barcharts : nixon.example.com"/>
+<meta property="og:site_name" content="nixon.example.com is William T. Bickelmann"/>
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
@@ -34,7 +34,7 @@
 <meta name="twitter:card" content="summary">
 
 <meta name="twitter:site" content="@nixon.example">
-<meta name="twitter:title" content="Viz : nixon.example.com">
+<meta name="twitter:title" content="Histograms and Barcharts : nixon.example.com">
 <meta name="twitter:creator" content="@nixon.example">
 <meta name="twitter:description" content="">
 <meta name="twitter:image:src" content="">
@@ -43,7 +43,7 @@
 
 
     <base href="/">
-    <title>Viz - nixon.example.com</title>
+    <title>Histograms and Barcharts - nixon.example.com</title>
     <link rel="canonical" href="/post/bar_hist_charts/">
     
 
@@ -59,7 +59,7 @@
     <figure>
       <a href="/" border=0 id="logolink"><div class="icon-nixon-home" id="logo"> </div></a>
     </figure>
-    <div id="byline">by N. Ixon</div>
+    <div id="byline">by William T. Bickelmann</div>
     <nav id="nav">
             <ul id="mainnav">
             <li>
@@ -94,7 +94,7 @@
 		<div class="dropdown share">
 			<ul class="social">
 				<li>
-					<a href="https://twitter.com/intent/tweet?status=Viz-%2fpost%2fbar_hist_charts%2f" target="_blank" title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a>
+					<a href="https://twitter.com/intent/tweet?status=Histograms%20and%20Barcharts-%2fpost%2fbar_hist_charts%2f" target="_blank" title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a>
 				</li>
 				<li>
 					<a href="https://www.facebook.com/sharer/sharer.php?u=%2fpost%2fbar_hist_charts%2f" target="_blank" title="Join me on Facebook" class="facebook"><span class="icon icon-facebook"></span>Facebook</a>
@@ -104,7 +104,7 @@
 				</li>
 
 				<li>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=%2fpost%2fbar_hist_charts%2f&title=Viz&source=nixon.example" target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=%2fpost%2fbar_hist_charts%2f&title=Histograms%20and%20Barcharts&source=nixon.example" target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a>
 				</li>
 
 				<li>
@@ -167,7 +167,7 @@
 
 
 <section id="main">
-  <h1 itemprop="name" id="title">Viz</h1>
+  <h1 itemprop="name" id="title">Histograms and Barcharts</h1>
   <div>
         <article itemprop="articleBody" id="content">
            <pre class="r"><code>library(dplyr)</code></pre>
@@ -18477,19 +18477,6 @@ library(Lahman)</code></pre>
   geom_bar(data=df, aes(x=name,y= HR), stat=&quot;identity&quot;,color=&quot;white&quot;,fill=&quot;black&quot;) +
   coord_flip()</code></pre>
 <p><img src="/post/Bar_hist_charts_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-<p>in order to make it more readable, we should sort it by value</p>
-<pre class="r"><code>df$name&lt;-factor(df$name,levels=df$name)
-
-
-df&lt;-Teams%&gt;%
-  filter(yearID==1980)%&gt;%
-  select(name,HR)%&gt;%
-  arrange(HR)
-
-ggplot()+
-  geom_bar(data=df, aes(x=name,y= HR), stat=&quot;identity&quot;,color=&quot;white&quot;,fill=&quot;black&quot;) +
-  coord_flip()</code></pre>
-<p><img src="/post/Bar_hist_charts_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 </div>
 
         </article>
@@ -18503,7 +18490,7 @@ ggplot()+
 <div>
 	<section id="datecount">
 		<h4 id="date"> Mon Jan 1, 0001 </h4>
-		<h5 id="wc"> 55100 Words </h5>
+		<h5 id="wc"> 55000 Words </h5>
 		<h5 id="readtime"> Read in about 259 Min </h5>
 	</section>
 	<ul id="categories">
@@ -18516,7 +18503,7 @@ ggplot()+
 
 <div>
 	<section id="prev">
-		&nbsp;<a class="previous" href="/post/2015-07-23-r-rmarkdown/"><i class="icon-nixon-arrow-left"></i> Normal Distribution</a><br>
+		&nbsp;<a class="previous" href="/presentation/aenean-odio-orci-mmxii/"><i class="icon-nixon-arrow-left"></i> Presentation Example</a><br>
 	</section>
 	<section id="next">
 		&nbsp;
@@ -18527,16 +18514,14 @@ ggplot()+
 <div>
 	<section id="author">
 		<h4>About the Author:</h4>
-		<p><p>Fusce pulvinar dictum magna, vel rutrum nunc tempor non. Curabitur aliquam <a href="http://mdhender.com">Laci Nia</a> justo. Pellentesque fringilla libero eget suscipit malesuada.</p>
-
-<p>Ut pharetra pellentesque eros non fringilla. Duis vel augue at ex semper lobortis vitae in ipsum. Suspendisse et congue libero.</p>
-</p>
+		<p>William T. Bickelmann
+Analyst, Data Scientist, Writer</p>
 	</section>
 </div>
 
 </aside>
 
-<meta itemprop="wordCount" content="55012">
+<meta itemprop="wordCount" content="54987">
 <meta itemprop="datePublished" content="0001-01-01">
 <meta itemprop="url" content="/post/bar_hist_charts/">
 
@@ -18556,7 +18541,7 @@ ggplot()+
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "nixon.example" + '.disqus.com/embed.js';
+        s.src = '//' + "analyticstalk.netlify" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
@@ -18571,7 +18556,7 @@ ggplot()+
 			Content &copy; 2016
 			
 				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-					<span itemprop="name">N. Ixon.</span>
+					<span itemprop="name">William T. Bickelmann.</span>
 				</span>
 			
 			<a rel="license" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>; 

@@ -1,7 +1,6 @@
 ---
-title: "Viz"
+title: "Histograms and Barcharts"
 author: "William Taylor Bickelmann"
-date: "September 25, 2017"
 output: html_document
 ---
 
@@ -83,17 +82,3 @@ ggplot()+
 ```
 
 
-in order to make it more readable, we should sort it by value
-```{r}
-df$name<-factor(df$name,levels=df$name)
-
-
-df<-Teams%>%
-  filter(yearID==1980)%>%
-  select(name,HR)%>%
-  arrange(HR)
-
-ggplot()+
-  geom_bar(data=df, aes(x=name,y= HR), stat="identity",color="white",fill="black") +
-  coord_flip()
-```
