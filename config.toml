@@ -2,7 +2,7 @@ baseurl = "https://analyticstalk.netlify.com/"
 theme = "nixon"
 title = "Analytics Talk"
 languageCode = "en-us"
-disqusShortname = "nixon.example"
+disqusShortname = "analyticstalk.netlify"
 copyright = "Copyright (c) 20YY, Your Name Here; all rights reserved."
 MetaDataFormat = "yaml"
 
@@ -12,7 +12,7 @@ GoogleAnalytics = "UA-XXXXX-Y"
 # note that the theme expects author both here and in the
 # parameters section
 [author]
-    name = "N. Ixon"
+    name = "William T. Bickelmann"
 
 # used by the theme
 [indexes]
@@ -26,13 +26,12 @@ GoogleAnalytics = "UA-XXXXX-Y"
 	personal_site = "https://nixon.example.com"
 
 	[params.author]
-		name = "N. Ixon"
+		name = "William T. Bickelmann"
 		# The three quotes allow the biography to span
 		# multiple lines. Must end with three, too.
 		short_bio = """
-Fusce pulvinar dictum magna, vel rutrum nunc tempor non. Curabitur aliquam <a href="http://mdhender.com">Laci Nia</a> justo. Pellentesque fringilla libero eget suscipit malesuada.
-
-Ut pharetra pellentesque eros non fringilla. Duis vel augue at ex semper lobortis vitae in ipsum. Suspendisse et congue libero."""
+William T. Bickelmann
+Analyst, Data Scientist, Writer""" 
 
 	[params.facebook]
 		account = "nixon.example"

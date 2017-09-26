@@ -27,7 +27,7 @@ HR_vs_SO&amp;lt;-inner_join(df,Master,by=c(&amp;quot;playerID&amp;quot;))%&amp;g
     <item>
       <title>Normal Distribution</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <pubDate>Sun, 24 Sep 2017 21:13:14 -0500</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>R MarkdownThe normal distribution is an extremely important concept for statistics. The assumption of a normal distribution is the only thing that allows for a number of statistical techniques, such as linear regression.

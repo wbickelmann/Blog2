@@ -25,6 +25,57 @@ HR_vs_SO&amp;lt;-inner_join(df,Master,by=c(&amp;quot;playerID&amp;quot;))%&amp;g
     </item>
     
     <item>
+      <title>Anti-White Rhetoric and Crime in South Africa</title>
+      <link>/post/post1/</link>
+      <pubDate>Mon, 25 Sep 2017 18:25:22 +0530</pubDate>
+      
+      <guid>/post/post1/</guid>
+      <description>In March 2017, President Jacob Zuma attempted to rally legislators to allow for the seizing of all white-owned farmland in an effort to establish &amp;lsquo;pre-colonial&amp;rsquo; land distribution. In order to do this, Zuma proposed the unification of all black political parties, in order to author a controversial change to the South African constitution. Zuma wishes to do this without compensating white land owners for property seized.
+Zuma is not alone in his thinking among black politicians; his call for unification follows a campaign by Julius Malema, a South African politician, who has called on the native population to take back land stolen by &amp;lsquo;Dutch thugs&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>History of Apartheid: A context for Ethnic Tension</title>
+      <link>/post/post2/</link>
+      <pubDate>Mon, 25 Sep 2017 18:25:22 +0530</pubDate>
+      
+      <guid>/post/post2/</guid>
+      <description>Apartheid is a word in Afrikaans meaning &amp;ldquo;apartness&amp;rdquo;. True to the translation, apartheid were a set of South African policies designed to racially segregate society. The policies pertained to residential areas, public facilities, and otherwise limit contact between the black majority and the white minority.
+The policies separating whites from blacks began three years after South Africa declared independence, in 1914 with the Land act, which forced black Africans to live in reserves and making it illegal for them to work as sharecroppers.</description>
+    </item>
+    
+    <item>
+      <title>Language Indicating Genocide</title>
+      <link>/post/post3/</link>
+      <pubDate>Mon, 25 Sep 2017 18:25:22 +0530</pubDate>
+      
+      <guid>/post/post3/</guid>
+      <description>The Social Media Analysis Project will be assessing ethnic tensions inn South Africa. Both in South Africa and the neighboring country of Zimbabwe, the indigenous population display a resentment towards white European settlers; causing many to speculate that they may be the target of a genocide in the near future. The primary focus of the analysis will be the language used on social media directed at the targeted group.
+While any type of negative language between the groups of the country could be a key indicator of how extreme the ethnic tensions are; several studies indicate that disgust may have the most predictive power.</description>
+    </item>
+    
+    <item>
+      <title>President Jacob Zuma</title>
+      <link>/post/post4/</link>
+      <pubDate>Mon, 25 Sep 2017 18:25:22 +0530</pubDate>
+      
+      <guid>/post/post4/</guid>
+      <description>Like the famous leader Nelson Mandela, Jacob Zuma has a background littered with criminal actions. He was convicted of conspiring to overthrow the apartheid government and imprisoned for 10 years on the notorious Robben Island, alongside Mandela. After his prison sentence ended, he left the country for a number of years, and lived in Mozambique and Zambia, meanwhile gaining power in the ANC political party. When he returned he used his elevated status and influence to negotiate condition of apartheid policies with the Afrikaner ruling class.</description>
+    </item>
+    
+    <item>
+      <title>Normal Distribution</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Sun, 24 Sep 2017 21:13:14 -0500</pubDate>
+      
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R MarkdownThe normal distribution is an extremely important concept for statistics. The assumption of a normal distribution is the only thing that allows for a number of statistical techniques, such as linear regression.
+The greater the number of observations, the more likely the distribution will look normal.
+For example a varible with only 30 observations looks a little off:
+plot(density(rnorm(30)))The plot above looks a little off. It seems a little skewed to the right.</description>
+    </item>
+    
+    <item>
       <title>Presentation Example</title>
       <link>/presentation/aenean-odio-orci-mmxii/</link>
       <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
@@ -33,18 +84,6 @@ HR_vs_SO&amp;lt;-inner_join(df,Master,by=c(&amp;quot;playerID&amp;quot;))%&amp;g
       <description>&lt;p&gt;Trying to figure out the purpose of this &amp;ldquo;presentation&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Normal Distribution</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThe normal distribution is an extremely important concept for statistics. The assumption of a normal distribution is the only thing that allows for a number of statistical techniques, such as linear regression.
-The greater the number of observations, the more likely the distribution will look normal.
-For example a varible with only 30 observations looks a little off:
-plot(density(rnorm(30)))The plot above looks a little off. It seems a little skewed to the right.</description>
     </item>
     
   </channel>
