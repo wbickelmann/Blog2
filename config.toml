@@ -30,7 +30,7 @@ GoogleAnalytics = "UA-XXXXX-Y"
 		# The three quotes allow the biography to span
 		# multiple lines. Must end with three, too.
 		short_bio = """
-William T. Bickelmann
+William T. Bickelmann:
 Analyst, Data Scientist, Writer""" 
 
 	[params.facebook]

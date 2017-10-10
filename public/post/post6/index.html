@@ -172,15 +172,15 @@
         <article itemprop="articleBody" id="content">
            <p>Generalized Linear Models</p>
 
-<p>Linear models are used to predict normally distributed data. But when data is binary or categorical, or count traditional linear regression will not work. General Linear Models (glm()) extend linear framework to data that is non normal. Logistic Regression and Possion Regression are two examples of GLM.
+<p>Linear models are used to predict normally distributed data. But when data is binary, categorical, or count traditional linear regression will not work. General Linear Models (glm()) extend linear framework to data that is non normal. Logistic Regression and Possion Regression are two examples of GLM.
 You can use the following code while substituting the fields specified in the table to get the type of regression you want. You pick the ideal type of regression depending on the data.</p>
 
 <p>-glm(formula, family=family(link=function), data=mydata)</p>
 
-<p>This table shows examples of general linear models one can use in the glm() function:
+<p>This table shows examples of general linear models one can use in the glm():
 <img src="/portfolio/post6.PNG" alt="alt-text" /></p>
 
-<p>Logistic Regression useful when trying to predict a binary outcome from a number of categorical or continuous predictors (independent variables). - see Keep for code You can use a number of diagnostic plots and functions to assess fit. You want a parsimonious model, meaning that if you can eliminate variables while maintaining the highest possible predictive power - do it. You can compare models with anova(). For generalized linear models, you&rsquo;ll want a chi-square version of this test.  -</p>
+<p>Logistic Regression is useful when trying to predict a binary outcome from a number of categorical or continuous predictors (independent variables). You want a parsimonious model, meaning that if you can eliminate variables while maintaining the highest possible predictive power - do it. You can compare models with anova(). For generalized linear models, you&rsquo;ll want a chi-square version of this test.  -</p>
 
 <p>-Robust logistic regression-The glmRob() function in the robust package can be used to fit a robust generalized linear model, including robust logistic regression. Robust logistic regression can be helpful when fitting logistic regression models to data containing outliers and influential observations.</p>
 
@@ -190,7 +190,7 @@ You can use the following code while substituting the fields specified in the ta
 
 <p>Poisson Regression is used when you have count data as the dependent variable with multiple categorical and numeric predictors. Over dispersion is one problem one can encounter in Poisson. It happens when the variance is greater than Poisson distribution predicts. Negative Binomial regression is one way to deal with over dispersion while dealing with count data.  This family of general linear models will still yield reliable predictions, even when the dependent variable is over-dispersed.</p>
 
-<p>Using a general linear model in the Gamma family with either log link or identity link will allow one to make predictions for a dependent variable that is skewed. It serves as an alternative to performing a loglinear transformation of the data.</p>
+<p>Using a general linear model in the Gamma family with either log link or identity link will allow one to make predictions for a dependent variable that is skewed. It serves as an alternative to performing a logarithmic transformation of the data.</p>
 
         </article>
   </div>
@@ -203,7 +203,7 @@ You can use the following code while substituting the fields specified in the ta
 <div>
 	<section id="datecount">
 		<h4 id="date"> Mon Oct 9, 2017 </h4>
-		<h5 id="wc"> 500 Words </h5>
+		<h5 id="wc"> 400 Words </h5>
 		<h5 id="readtime"> Read in about 2 Min </h5>
 	</section>
 	<ul id="categories">
@@ -216,7 +216,7 @@ You can use the following code while substituting the fields specified in the ta
 
 <div>
 	<section id="prev">
-		&nbsp;
+		&nbsp;<a class="previous" href="/post/bar_hist_charts/"><i class="icon-nixon-arrow-left"></i> Histograms and Barcharts</a><br>
 	</section>
 	<section id="next">
 		&nbsp;<a class="next" href="/post/post5/">White Nationalism in America <i class="icon-nixon-arrow-right"></i></a>
@@ -234,7 +234,7 @@ Analyst, Data Scientist, Writer</p>
 
 </aside>
 
-<meta itemprop="wordCount" content="400">
+<meta itemprop="wordCount" content="381">
 <meta itemprop="datePublished" content="2017-10-09">
 <meta itemprop="url" content="/post/post6/">
 

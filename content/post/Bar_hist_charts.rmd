@@ -1,6 +1,7 @@
 ---
 title: "Histograms and Barcharts"
 author: "William Taylor Bickelmann"
+date: 2017-10-09T21:13:14-05:00
 output: html_document
 ---
 
@@ -36,7 +37,7 @@ ggplot() + #blank slate
 Now to get rid of the NAs that are screwing with the results
 
 ```{r}
-df%>%
+df<-df%>%
   filter(!is.na(weight))
 ```
 now lets try again with some better graphics

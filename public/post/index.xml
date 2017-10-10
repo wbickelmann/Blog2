@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 20YY, Your Name Here; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 09 Oct 2017 18:25:22 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 09 Oct 2017 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Histograms and Barcharts</title>
+      <link>/post/bar_hist_charts/</link>
+      <pubDate>Mon, 09 Oct 2017 21:13:14 -0500</pubDate>
+      
+      <guid>/post/bar_hist_charts/</guid>
+      <description>library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)library(ggiraph)library(Lahman)HistogramVisualization
+df&amp;lt;-Master%&amp;gt;%select(weight)now to make a plot
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.## Warning: Removed 854 rows containing non-finite values (stat_bin).Now to get rid of the NAs that are screwing with the results</description>
+    </item>
     
     <item>
       <title>General Linear Models</title>
@@ -19,7 +30,7 @@
       
       <guid>/post/post6/</guid>
       <description>Generalized Linear Models
-Linear models are used to predict normally distributed data. But when data is binary or categorical, or count traditional linear regression will not work. General Linear Models (glm()) extend linear framework to data that is non normal. Logistic Regression and Possion Regression are two examples of GLM. You can use the following code while substituting the fields specified in the table to get the type of regression you want.</description>
+Linear models are used to predict normally distributed data. But when data is binary, categorical, or count traditional linear regression will not work. General Linear Models (glm()) extend linear framework to data that is non normal. Logistic Regression and Possion Regression are two examples of GLM. You can use the following code while substituting the fields specified in the table to get the type of regression you want.</description>
     </item>
     
     <item>
@@ -93,17 +104,6 @@ While any type of negative language between the groups of the country could be a
 The greater the number of observations, the more likely the distribution will look normal.
 For example a varible with only 30 observations looks a little off:
 plot(density(rnorm(30)))The plot above looks a little off. It seems a little skewed to the right.</description>
-    </item>
-    
-    <item>
-      <title>Histograms and Barcharts</title>
-      <link>/post/bar_hist_charts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/bar_hist_charts/</guid>
-      <description>library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)library(ggiraph)library(Lahman)HistogramVisualization
-df&amp;lt;-Master%&amp;gt;%select(weight)now to make a plot
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.## Warning: Removed 854 rows containing non-finite values (stat_bin).Now to get rid of the NAs that are screwing with the results</description>
     </item>
     
   </channel>
