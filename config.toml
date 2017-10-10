@@ -22,8 +22,8 @@ GoogleAnalytics = "UA-XXXXX-Y"
 [params]
 	copyright_years = "2016"
 	css_file = "/css/nixon.css"
-	domain_name = "nixon.example.com"
-	personal_site = "https://nixon.example.com"
+	domain_name = "https://analyticstalk.netlify.com/"
+	personal_site = "https://wbickelmann-career.000webhostapp.com/"
 
 	[params.author]
 		name = "William T. Bickelmann"
