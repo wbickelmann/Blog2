@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>General Linear Models</title>
+      <link>/post/post6/</link>
+      <pubDate>Mon, 02 Oct 2017 18:25:22 +0530</pubDate>
+      
+      <guid>/post/post6/</guid>
+      <description>Generalized Linear Models
+Linear models are used to predict normally distributed data. But when data is binary or categorical, or count traditional linear regression will not work. General Linear Models (glm()) extend linear framework to data that is non normal. Logistic Regression and Possion Regression are two examples of GLM. You can use the following code while substituting the fields specified in the table to get the type of regression you want.</description>
+    </item>
+    
+    <item>
       <title>White Nationalism in America</title>
       <link>/post/post5/</link>
       <pubDate>Mon, 02 Oct 2017 18:25:22 +0530</pubDate>
