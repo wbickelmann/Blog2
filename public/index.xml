@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 20YY, Your Name Here; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 02 Oct 2017 18:25:22 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 09 Oct 2017 18:25:22 +0530</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>General Linear Models</title>
       <link>/post/post6/</link>
-      <pubDate>Mon, 02 Oct 2017 18:25:22 +0530</pubDate>
+      <pubDate>Mon, 09 Oct 2017 18:25:22 +0530</pubDate>
       
       <guid>/post/post6/</guid>
       <description>Generalized Linear Models
