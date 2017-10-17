@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 20YY, Your Name Here; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 09 Oct 2017 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 16 Oct 2017 18:25:22 +0530</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linear and Logistic Regression</title>
+      <link>/post/post7/</link>
+      <pubDate>Mon, 16 Oct 2017 18:25:22 +0530</pubDate>
+      
+      <guid>/post/post7/</guid>
+      <description>Linear and Logistic Regression
+Linear regression is a technique used in statistics which can be used to display a relationship between a dependent variable and one or more independent variables. The technique plots data points and draws a line of best fit. Linear regression is one of the most common types of regression and one of the most popular predictive modeling techniques. The most used technique of calculating the line of best fit is ordinary least squares, which makes the line which has the minimum squared of the residuals.</description>
+    </item>
     
     <item>
       <title>Histograms and Barcharts</title>

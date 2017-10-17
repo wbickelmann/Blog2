@@ -15,16 +15,16 @@
  
 <meta property="og:type" content="article"/>
 <meta property="og:description" content=""/>
-<meta property="og:title" content="Histograms and Barcharts : https://analyticstalk.netlify.com/"/>
+<meta property="og:title" content="Linear and Logistic Regression : https://analyticstalk.netlify.com/"/>
 <meta property="og:site_name" content="https://analyticstalk.netlify.com/ is William T. Bickelmann"/>
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
-<meta property="og:url" content="/post/bar_hist_charts/">
+<meta property="og:url" content="/post/post7/">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2017-10-09"/>
-<meta property="article:modified_time" content="2017-10-09"/>
+<meta property="article:published_time" content="2017-10-16"/>
+<meta property="article:modified_time" content="2017-10-16"/>
 
 
 
@@ -34,7 +34,7 @@
 <meta name="twitter:card" content="summary">
 
 <meta name="twitter:site" content="@nixon.example">
-<meta name="twitter:title" content="Histograms and Barcharts : https://analyticstalk.netlify.com/">
+<meta name="twitter:title" content="Linear and Logistic Regression : https://analyticstalk.netlify.com/">
 <meta name="twitter:creator" content="@nixon.example">
 <meta name="twitter:description" content="">
 <meta name="twitter:image:src" content="">
@@ -43,8 +43,8 @@
 
 
     <base href="/">
-    <title>Histograms and Barcharts - https://analyticstalk.netlify.com/</title>
-    <link rel="canonical" href="/post/bar_hist_charts/">
+    <title>Linear and Logistic Regression - https://analyticstalk.netlify.com/</title>
+    <link rel="canonical" href="/post/post7/">
     
 
     <link href='//fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -94,27 +94,27 @@
 		<div class="dropdown share">
 			<ul class="social">
 				<li>
-					<a href="https://twitter.com/intent/tweet?status=Histograms%20and%20Barcharts-%2fpost%2fbar_hist_charts%2f" target="_blank" title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a>
+					<a href="https://twitter.com/intent/tweet?status=Linear%20and%20Logistic%20Regression-%2fpost%2fpost7%2f" target="_blank" title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a>
 				</li>
 				<li>
-					<a href="https://www.facebook.com/sharer/sharer.php?u=%2fpost%2fbar_hist_charts%2f" target="_blank" title="Join me on Facebook" class="facebook"><span class="icon icon-facebook"></span>Facebook</a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=%2fpost%2fpost7%2f" target="_blank" title="Join me on Facebook" class="facebook"><span class="icon icon-facebook"></span>Facebook</a>
 				</li>
 				<li>
-					<a href="https://plus.google.com/share?url=%2fpost%2fbar_hist_charts%2f" target="_blank" title="Google+" class="googleplus"><span class="icon icon-google-plus"></span>Google+</a>
-				</li>
-
-				<li>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=%2fpost%2fbar_hist_charts%2f&title=Histograms%20and%20Barcharts&source=nixon.example" target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a>
+					<a href="https://plus.google.com/share?url=%2fpost%2fpost7%2f" target="_blank" title="Google+" class="googleplus"><span class="icon icon-google-plus"></span>Google+</a>
 				</li>
 
 				<li>
-					<a href="http://del.icio.us/post?url=%2fpost%2fbar_hist_charts%2f" target="_blank" title="Delicious" class="delicious"><span class="icon icon-delicious"></span>Delicious</a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=%2fpost%2fpost7%2f&title=Linear%20and%20Logistic%20Regression&source=nixon.example" target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a>
+				</li>
+
+				<li>
+					<a href="http://del.icio.us/post?url=%2fpost%2fpost7%2f" target="_blank" title="Delicious" class="delicious"><span class="icon icon-delicious"></span>Delicious</a>
 				</li>
 				<li>
-					<a href="http://www.reddit.com/submit?url=%2fpost%2fbar_hist_charts%2f" target="_blank" title="Reddit" class="reddit"><span class="icon icon-reddit"></span>Reddit</a>
+					<a href="http://www.reddit.com/submit?url=%2fpost%2fpost7%2f" target="_blank" title="Reddit" class="reddit"><span class="icon icon-reddit"></span>Reddit</a>
 				</li>
 				<li>
-					<a href="http://www.stumbleupon.com/submit?url=%2fpost%2fbar_hist_charts%2f" target="_blank" title="StumbleUpon" class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a>
+					<a href="http://www.stumbleupon.com/submit?url=%2fpost%2fpost7%2f" target="_blank" title="StumbleUpon" class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a>
 				</li>
 			</ul>
 			<span class="subcount">sharing is caring</span>
@@ -167,62 +167,20 @@
 
 
 <section id="main">
-  <h1 itemprop="name" id="title">Histograms and Barcharts</h1>
+  <h1 itemprop="name" id="title">Linear and Logistic Regression</h1>
   <div>
         <article itemprop="articleBody" id="content">
-           <pre class="r"><code>library(dplyr)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>library(ggplot2)
-library(ggiraph)
-library(Lahman)</code></pre>
-<div id="histogram" class="section level2">
-<h2>Histogram</h2>
-<p>Visualization</p>
-<pre class="r"><code>df&lt;-Master%&gt;%
-  select(weight)</code></pre>
-<p>now to make a plot</p>
-<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<pre><code>## Warning: Removed 854 rows containing non-finite values (stat_bin).</code></pre>
-<p><img src="/post/Bar_hist_charts_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Now to get rid of the NAs that are screwing with the results</p>
-<pre class="r"><code>df&lt;-df%&gt;%
-  filter(!is.na(weight))</code></pre>
-<p>now lets try again with some better graphics</p>
-<pre class="r"><code>ggplot()+
-  geom_histogram(data=df,aes(x=weight),col=&quot;black&quot;,fill=&quot;green&quot;) # two argumets were aded; color and fill</code></pre>
-<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="/post/Bar_hist_charts_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<pre class="r"><code>ggplot()+
-  geom_histogram(data=df,aes(x=weight),col=&quot;black&quot;,fill=&quot;green&quot;, bins = 25) #now to mess with the bins</code></pre>
-<p><img src="/post/Bar_hist_charts_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-<p>See how the appearance completely changed? You can get more granularity with more bins</p>
-<pre class="r"><code>ggplot()+
-  geom_histogram(data=df,aes(x=weight),col=&quot;black&quot;,fill=&quot;green&quot;, bins = 50)</code></pre>
-<p><img src="/post/Bar_hist_charts_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
-<p>Well thats pretty much it for histograms as they are pretty simple.</p>
-</div>
-<div id="barplots" class="section level2">
-<h2>Barplots</h2>
-<p>The prerequisite for barplots are that the Variable of interest is categorical</p>
-<pre class="r"><code>df&lt;-Teams%&gt;%
-  filter(yearID==1980)%&gt;%
-  select(name,HR)</code></pre>
-<p>Now that we have a categorical variable, lts get on to making a visualization</p>
-<pre class="r"><code>ggplot()+
-  geom_bar(data=df, aes(x=name,y= HR), stat=&quot;identity&quot;,color=&quot;white&quot;,fill=&quot;black&quot;)</code></pre>
-<p><img src="/post/Bar_hist_charts_files/figure-html/unnamed-chunk-7-1.png" width="672" /> lets try fliping to see if we can make the plot more readable</p>
-<pre class="r"><code>ggplot()+
-  geom_bar(data=df, aes(x=name,y= HR), stat=&quot;identity&quot;,color=&quot;white&quot;,fill=&quot;black&quot;) +
-  coord_flip()</code></pre>
-<p><img src="/post/Bar_hist_charts_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-</div>
+           <p>Linear and Logistic Regression</p>
+
+<p>Linear regression is a technique used in statistics which can be used  to display a relationship between a dependent variable and one or more independent variables. The technique plots data points and draws a line of best fit. Linear regression is one of the most common types of regression and one of the most popular predictive modeling techniques. The most used technique of calculating the line of best fit is ordinary least squares, which makes the line which has the minimum squared of the residuals. This will be covered with more detail in another post.
+<img src="/portfolio/linreg.PNG" alt="alt-text" /></p>
+
+<p>For this regression model, the dependent variable should be continuous and the independent variables should be discrete or continuous. Linear regression can explain how much of an effect the independent variable(s) have on the dependent variable. In addition to this, it can be used to   predict the effect of shifts in the independent variables on the dependent variable. Linear regression also identifies and can be used to attain data point estimates.</p>
+
+<p>Logistic regression is a specific type of regression used when the dependent variable is binary(takes one of two possible values). The independent variables can be discrete and/or continuous. &ldquo;The important point here to note is that in linear regression, the expected values of the response variable are modeled based on combination of values taken by the predictors. In logistic regression Probability or Odds of the response taking a particular value is modeled based on combination of values taken by the predictors&rdquo; (Penn State Eberly College of Science).<br />
+<img src="/portfolio/logreg.PNG" alt="alt-text" /></p>
+
+<p>Logistic regression is essentially used to predict when a whether a value will be 1 or 0. Another difference between OLS and logistic regression is that R squared is not use dot measure overall fit.</p>
 
         </article>
   </div>
@@ -234,9 +192,9 @@ library(Lahman)</code></pre>
 
 <div>
 	<section id="datecount">
-		<h4 id="date"> Mon Oct 9, 2017 </h4>
+		<h4 id="date"> Mon Oct 16, 2017 </h4>
 		<h5 id="wc"> 300 Words </h5>
-		<h5 id="readtime"> Read in about 1 Min </h5>
+		<h5 id="readtime"> Read in about 2 Min </h5>
 	</section>
 	<ul id="categories">
 	
@@ -248,10 +206,10 @@ library(Lahman)</code></pre>
 
 <div>
 	<section id="prev">
-		&nbsp;<a class="previous" href="/post/post7/"><i class="icon-nixon-arrow-left"></i> Linear and Logistic Regression</a><br>
+		&nbsp;
 	</section>
 	<section id="next">
-		&nbsp;<a class="next" href="/post/post6/">General Linear Models <i class="icon-nixon-arrow-right"></i></a>
+		&nbsp;<a class="next" href="/post/bar_hist_charts/">Histograms and Barcharts <i class="icon-nixon-arrow-right"></i></a>
 	</section>
 </div>
 
@@ -266,9 +224,9 @@ Analyst, Data Scientist, Writer</p>
 
 </aside>
 
-<meta itemprop="wordCount" content="205">
-<meta itemprop="datePublished" content="2017-10-09">
-<meta itemprop="url" content="/post/bar_hist_charts/">
+<meta itemprop="wordCount" content="292">
+<meta itemprop="datePublished" content="2017-10-16">
+<meta itemprop="url" content="/post/post7/">
 
 
 <aside id=comments>
