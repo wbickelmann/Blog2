@@ -65,7 +65,11 @@ The prerequisite for barplots are that the Variable of interest is categorical
 ```{r}
 df<-Teams%>%
   filter(yearID==1980)%>%
-  select(name,HR)
+  select(name,HR)%>%
+  arrange(HR)
+
+df$name<-factor(df$name,levels=df$name)
+
 ```
 
 Now that we have a categorical variable, lts get on to making a visualization
