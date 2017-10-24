@@ -2,8 +2,7 @@
 showonlyimage = true
 draft = false
 date = "2017-10-23T18:25:22+05:30"
-title = "Linear Discriminant Analysis
-"
+title = "Linear Discriminant Analysis"
 weight = 0
 +++
 
