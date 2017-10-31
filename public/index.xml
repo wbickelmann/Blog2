@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 20YY, Your Name Here; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 16 Oct 2017 18:25:22 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 23 Oct 2017 18:25:22 +0530</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>K Nearest Neighbors</title>
+      <link>/post/post9/</link>
+      <pubDate>Mon, 23 Oct 2017 18:25:22 +0530</pubDate>
+      
+      <guid>/post/post9/</guid>
+      <description>K Nearest Neighbors
+K nearest Neighbors is a classification algorithm that uses similar characteristics to give labels to unlabeled data. The advantages of K nearest neighbors include that is very simple and that it does not make any assumptions about the data. The disadvantages include that it is not very effective when the data is noisy and when there are clear boundaries between groups. Additionally it does not leave the analyst with a model, and selecting the wrong K can lead to inaccuracies.</description>
+    </item>
+    
+    <item>
+      <title>Linear Discriminant Analysis</title>
+      <link>/post/post8/</link>
+      <pubDate>Mon, 23 Oct 2017 18:25:22 +0530</pubDate>
+      
+      <guid>/post/post8/</guid>
+      <description>Linear Discriminant Analysis
+LDFA is a linear classifier which classifies observations based on a linear combination of variables. It searches for the combination which separates the variables most effectively. Unlike many other methods, Linear discriminant analysis, models the predictor variable distribution instead of the dependent variable. The algorithm uses the model to take a Bayesian approach to make an estimate for Pr(Y = k|X = x). This method should be used when the predictor variables have a normal distribution, when the classes are clearly separated.</description>
+    </item>
     
     <item>
       <title>Linear and Logistic Regression</title>
