@@ -1,7 +1,7 @@
 ---
 title: "Statistical inference with the GSS data"
 author: "William Taylor Bickelmann"
-date: 2017-11-06T21:13:14-05:00
+date: 2017-11-06
 output:
   html_document:
     fig_height: 4
@@ -22,10 +22,6 @@ library(miceadds)
 ```
 
 ### Load data
-
-Make sure your data and R Markdown files are in the same directory. When loaded
-your data file will be called `gss`. Delete this note when before you submit 
-your work. 
 
 ```{r load-data}
 load.Rdata(filename = "C:/Users/William/Documents/Datasets/gss.Rdata","gss")
