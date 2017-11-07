@@ -1,5 +1,7 @@
 ---
 title: "Statistical inference with the GSS data"
+author: "William Taylor Bickelmann"
+date: 2017-11-06T21:13:14-05:00
 output:
   html_document:
     fig_height: 4
