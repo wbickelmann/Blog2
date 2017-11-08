@@ -1,5 +1,5 @@
 ---
-title: "Histograms and Barcharts"
+title: "Histograms and Barcharts2"
 author: "William Taylor Bickelmann"
 date: 2017-10-09
 output: html_document
