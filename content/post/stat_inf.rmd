@@ -2,12 +2,7 @@
 title: "Statistical inference with the GSS data"
 author: "William Taylor Bickelmann"
 date: 2017-11-06
-output:
-  html_document:
-    fig_height: 4
-    highlight: pygments
-    theme: spacelab
-  pdf_document: default
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
