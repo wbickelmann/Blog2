@@ -1,6 +1,24 @@
+---
+title: "Histograms and Barcharts"
+author: "William Taylor Bickelmann"
+date: 2017-10-09
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Clustering is a technique
+
+```{r}
 library(NbClust)
 iris<-data.frame(iris3)
 iris<-read.csv("C:/Users/William/Documents/Datasets/Iris.csv")
 head(iris)
 iris<-iris[,c(-1,-6)]
-View(iris)
+head(iris)
+```
+```{r}
+
+```
+
