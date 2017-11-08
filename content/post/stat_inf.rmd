@@ -10,7 +10,10 @@ output:
   pdf_document: default
 ---
 
-## Setup
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 
 ### Load packages
 

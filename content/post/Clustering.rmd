@@ -1,0 +1,6 @@
+library(NbClust)
+iris<-data.frame(iris3)
+iris<-read.csv("C:/Users/William/Documents/Datasets/Iris.csv")
+head(iris)
+iris<-iris[,c(-1,-6)]
+View(iris)
