@@ -1,14 +1,13 @@
 ---
-title: "Histograms and Barcharts1"
+title: "Statistical inference with the GSS data"
 author: "William Taylor Bickelmann"
-date: 2017-10-09
+date: 2017-11-06
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
 
 
 ### Load packages

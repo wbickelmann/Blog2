@@ -1,24 +1,49 @@
 ---
-title: "Histograms and Barcharts2"
+title: "Clustering
 author: "William Taylor Bickelmann"
-date: 2017-10-09
+date: 2017-11-09
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-Clustering is a technique
+Clustering is the technique of dividing the population into groups based on similar characteristics. Useful when there are too many variables that could mark similarities; Youre not sure which category is going to yield the best results in categorization
 
+Hard clustering has a binary possibility when classifying a data point into a cluster; it is or it isn't. 
+
+Soft clustering involves calculating a likelihood that a data point is in one of the clusters
+
+There are various methods of clustering but the most common is K-means clustering; which maximizes the distance between clusters and computes cluster similarity based on distance (usually Euclidean).
+
+K-Means represents the number of clusters in which we want our data to divide into. The basic restriction for K-Means algorithm is that your data should be continuous in nature. It won't work if data is categorical in nature.
+
+K-means is iterative- that is to say it repeats the task of maximizing the distance between clusters until process is complete. 
+It computes cluster centroids - then assigns all the data points close to it to that cluster then repeats the process
+##Step 1: Data Loading and Cleaning
 ```{r}
 library(NbClust)
 iris<-data.frame(iris3)
 iris<-read.csv("C:/Users/William/Documents/Datasets/Iris.csv")
+iris1<-read.csv("C:/Users/William/Documents/Datasets/Iris.csv")
 head(iris)
 iris<-iris[,c(-1,-6)]
 head(iris)
 ```
+
+
+
+##Step 2: Data Normalization
 ```{r}
+iris<-scale(iris)
+kmeans.iris<-kmeans(iris,3,nstart = 20)
+summary(kmeans.iris)
+kmeans.iris$centers
+```
+This
+
+```{r}
+table(kmeans.iris$cluster, iris1$Species)
 
 ```
 
