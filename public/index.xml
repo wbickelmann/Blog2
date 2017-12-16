@@ -1,151 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Analytics Talk</title>
-    <link>/</link>
-    <description>Recent content on Analytics Talk</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Copyright (c) 20YY, Your Name Here; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 23 Oct 2017 18:25:22 +0530</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>K Nearest Neighbors</title>
-      <link>/post/post9/</link>
-      <pubDate>Mon, 23 Oct 2017 18:25:22 +0530</pubDate>
-      
-      <guid>/post/post9/</guid>
-      <description>K Nearest Neighbors
-K nearest Neighbors is a classification algorithm that uses similar characteristics to give labels to unlabeled data. The advantages of K nearest neighbors include that is very simple and that it does not make any assumptions about the data. The disadvantages include that it is not very effective when the data is noisy and when there are clear boundaries between groups. Additionally it does not leave the analyst with a model, and selecting the wrong K can lead to inaccuracies.</description>
-    </item>
-    
-    <item>
-      <title>Linear Discriminant Analysis</title>
-      <link>/post/post8/</link>
-      <pubDate>Mon, 23 Oct 2017 18:25:22 +0530</pubDate>
-      
-      <guid>/post/post8/</guid>
-      <description>Linear Discriminant Analysis
-LDFA is a linear classifier which classifies observations based on a linear combination of variables. It searches for the combination which separates the variables most effectively. Unlike many other methods, Linear discriminant analysis, models the predictor variable distribution instead of the dependent variable. The algorithm uses the model to take a Bayesian approach to make an estimate for Pr(Y = k|X = x). This method should be used when the predictor variables have a normal distribution, when the classes are clearly separated.</description>
-    </item>
-    
-    <item>
-      <title>Linear and Logistic Regression</title>
-      <link>/post/post7/</link>
-      <pubDate>Mon, 16 Oct 2017 18:25:22 +0530</pubDate>
-      
-      <guid>/post/post7/</guid>
-      <description>Linear and Logistic Regression
-Linear regression is a technique used in statistics which can be used to display a relationship between a dependent variable and one or more independent variables. The technique plots data points and draws a line of best fit. Linear regression is one of the most common types of regression and one of the most popular predictive modeling techniques. The most used technique of calculating the line of best fit is ordinary least squares, which makes the line which has the minimum squared of the residuals.</description>
-    </item>
-    
-    <item>
-      <title>Histograms and Barcharts</title>
-      <link>/post/bar_hist_charts/</link>
-      <pubDate>Mon, 09 Oct 2017 21:13:14 -0500</pubDate>
-      
-      <guid>/post/bar_hist_charts/</guid>
-      <description>library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)library(ggiraph)library(Lahman)HistogramVisualization
-df&amp;lt;-Master%&amp;gt;%select(weight)now to make a plot
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.## Warning: Removed 854 rows containing non-finite values (stat_bin).Now to get rid of the NAs that are screwing with the results</description>
-    </item>
-    
-    <item>
-      <title>General Linear Models</title>
-      <link>/post/post6/</link>
-      <pubDate>Mon, 09 Oct 2017 18:25:22 +0530</pubDate>
-      
-      <guid>/post/post6/</guid>
-      <description>Generalized Linear Models
-Linear models are used to predict normally distributed data. But when data is binary, categorical, or count traditional linear regression will not work. General Linear Models (glm()) extend linear framework to data that is non normal. Logistic Regression and Possion Regression are two examples of GLM. You can use the following code while substituting the fields specified in the table to get the type of regression you want.</description>
-    </item>
-    
-    <item>
-      <title>White Nationalism in America</title>
-      <link>/post/post5/</link>
-      <pubDate>Mon, 02 Oct 2017 18:25:22 +0530</pubDate>
-      
-      <guid>/post/post5/</guid>
-      <description>As part of a larger analysis on white nationalism around the world, this analysis will focus on the resurging white nationalist movement in America.
-White racial consciousness became more popular than it has in decades, during the 2016 presidential election, as part of a larger growth of anti-establishment conservatism called the alt-right. The prevalence of white identitarianism in this movement became the subject of much speculation after Richard Spencer shouted, &amp;ldquo;Hail Trump, hail our people, hail victory&amp;rdquo; before five people in the audience gave the Roman salute at a National Policy Institute meeting.</description>
-    </item>
-    
-    <item>
-      <title>Visualization Practice</title>
-      <link>/post/interactive_viz/</link>
-      <pubDate>Mon, 25 Sep 2017 21:13:14 -0500</pubDate>
-      
-      <guid>/post/interactive_viz/</guid>
-      <description>library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)library(ggiraph)First to Wrangel Data
-Batting%&amp;gt;%group_by(playerID)%&amp;gt;%summarize(Career_HR=sum(HR),Career_SO=sum(SO))%&amp;gt;%filter(Career_HR&amp;gt;=400)-&amp;gt;dfNow an Inner Join
-HR_vs_SO&amp;lt;-inner_join(df,Master,by=c(&amp;quot;playerID&amp;quot;))%&amp;gt;%select(nameFirst,nameLast,Career_HR,Career_SO)———————————————————————————-Next to make it a visualization
-g&amp;lt;-ggplot()+geom_point(data=HR_vs_SO, aes(x=Career_SO,y=Career_HR)) +ggtitle(&amp;quot;Career Homeruns vs. Strikeouts for Great Hitters&amp;quot;) +xlab(&amp;quot;Strikeouts&amp;quot;) +ylab(&amp;quot;Homeruns&amp;quot;)gNow to make it interactive</description>
-    </item>
-    
-    <item>
-      <title>Anti-White Rhetoric and Crime in South Africa</title>
-      <link>/post/post1/</link>
-      <pubDate>Mon, 25 Sep 2017 18:25:22 +0530</pubDate>
-      
-      <guid>/post/post1/</guid>
-      <description>In March 2017, President Jacob Zuma attempted to rally legislators to allow for the seizing of all white-owned farmland in an effort to establish &amp;lsquo;pre-colonial&amp;rsquo; land distribution. In order to do this, Zuma proposed the unification of all black political parties, in order to author a controversial change to the South African constitution. Zuma wishes to do this without compensating white land owners for property seized.
-Zuma is not alone in his thinking among black politicians; his call for unification follows a campaign by Julius Malema, a South African politician, who has called on the native population to take back land stolen by &amp;lsquo;Dutch thugs&amp;rsquo;.</description>
-    </item>
-    
-    <item>
-      <title>History of Apartheid: A context for Ethnic Tension</title>
-      <link>/post/post2/</link>
-      <pubDate>Mon, 25 Sep 2017 18:25:22 +0530</pubDate>
-      
-      <guid>/post/post2/</guid>
-      <description>Apartheid is a word in Afrikaans meaning &amp;ldquo;apartness&amp;rdquo;. True to the translation, apartheid were a set of South African policies designed to racially segregate society. The policies pertained to residential areas, public facilities, and otherwise limit contact between the black majority and the white minority.
-The policies separating whites from blacks began three years after South Africa declared independence, in 1914 with the Land act, which forced black Africans to live in reserves and making it illegal for them to work as sharecroppers.</description>
-    </item>
-    
-    <item>
-      <title>Language Indicating Genocide</title>
-      <link>/post/post3/</link>
-      <pubDate>Mon, 25 Sep 2017 18:25:22 +0530</pubDate>
-      
-      <guid>/post/post3/</guid>
-      <description>The Social Media Analysis Project will be assessing ethnic tensions inn South Africa. Both in South Africa and the neighboring country of Zimbabwe, the indigenous population display a resentment towards white European settlers; causing many to speculate that they may be the target of a genocide in the near future. The primary focus of the analysis will be the language used on social media directed at the targeted group.
-While any type of negative language between the groups of the country could be a key indicator of how extreme the ethnic tensions are; several studies indicate that disgust may have the most predictive power.</description>
-    </item>
-    
-    <item>
-      <title>President Jacob Zuma</title>
-      <link>/post/post4/</link>
-      <pubDate>Mon, 25 Sep 2017 18:25:22 +0530</pubDate>
-      
-      <guid>/post/post4/</guid>
-      <description>Like the famous leader Nelson Mandela, Jacob Zuma has a background littered with criminal actions. He was convicted of conspiring to overthrow the apartheid government and imprisoned for 10 years on the notorious Robben Island, alongside Mandela. After his prison sentence ended, he left the country for a number of years, and lived in Mozambique and Zambia, meanwhile gaining power in the ANC political party. When he returned he used his elevated status and influence to negotiate condition of apartheid policies with the Afrikaner ruling class.</description>
-    </item>
-    
-    <item>
-      <title>Normal Distribution</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Sun, 24 Sep 2017 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThe normal distribution is an extremely important concept for statistics. The assumption of a normal distribution is the only thing that allows for a number of statistical techniques, such as linear regression.
-The greater the number of observations, the more likely the distribution will look normal.
-For example a varible with only 30 observations looks a little off:
-plot(density(rnorm(30)))The plot above looks a little off. It seems a little skewed to the right.</description>
-    </item>
-    
-    <item>
-      <title>Presentation Example</title>
-      <link>/presentation/aenean-odio-orci-mmxii/</link>
-      <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/presentation/aenean-odio-orci-mmxii/</guid>
-      <description>&lt;p&gt;Trying to figure out the purpose of this &amp;ldquo;presentation&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
