@@ -1,0 +1,61 @@
+---
+title: "Time Series Analysis Graphing"
+author: "William Taylor Bickelmann"
+date: 2017-07-23T21:13:14-05:00
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggiraph)
+library(ggplot2)
+library(Lahman)
+```
+
+
+```{r}
+df <- Batting%>%
+      group_by(playerID)%>%
+      summarize(Career_HR = sum(HR),Career_SO = sum(SO))%>%
+      filter(Career_HR >= 400)
+head(df)
+```
+
+
+```{r}
+HR_vs_SO <- inner_join(df,Master,by=c("playerID"))%>%
+            select(nameFirst,nameLast,Career_HR,Career_SO)
+```
+
+
+```{r}
+HR_vs_SO$name <-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
+head(HR_vs_SO)
+```
+
+Now for the timeseries analysis with GGiraph
+
+The firststep is to wrangle the data
+```{r}
+df <- Batting%>%
+        filter(playerID == "ruthba01")%>%
+        select(yearID,HR)
+```
+
+Next to organize the plot ggplot aspect of the plot
+
+```{r}
+G <- ggplot()+
+      geom_line(data = df, aes(x=yearID,y=HR))+
+      geom_point_interactive(data=df, aes(x=yearID,y=HR,tooltip=HR, data_id = yearID))
+```
+
+Now for ggirpah
+
+```{r}
+ggiraph(code = print(G), hover_css = "fill:white; stroke:red")
+
+```
+
+

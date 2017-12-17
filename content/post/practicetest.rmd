@@ -1,0 +1,78 @@
+---
+title: "Practice Test Dashboard"
+author: "William Taylor Bickelmann"
+date: "September 27, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(lubridate)
+library(dplyr)
+library(ggplot2)
+```
+
+
+```{r}
+accidents<-read.csv("Accidents0515.csv",header=TRUE,stringsAsFactors=FALSE)
+df<-accidents
+df$Date<-dmy(df$Date)
+df<-df%>%
+  filter(Date<="2005-12-31")
+df$Day_of_Week<-factor(df$Day_of_Week,levels=c("1","2","3","4","5","6","7"))
+
+df1<-df%>%
+  group_by(Day_of_Week)%>%
+  select(Day_of_Week)%>%
+  summarise(accident_number=n())
+head(df1)
+
+df2<-df%>%
+  group_by(Date)%>%
+  select(Date)%>%
+  summarise(accident_number=n())
+head(df2)
+
+df3<-df%>%
+  group_by(Date)%>%
+  select(Date)%>%
+  filter(Date>="2005-12-1"& Date<="2005-12-31")%>%
+  summarise(accident_number=n())
+head(df3)
+
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+ggplot()+
+  geom_bar(data=df1, aes(x=Day_of_Week,y= accident_number), stat="identity",color="blue",fill="white")+
+  ylab("Number of Accidents before 2006") +
+  xlab("Weekday")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+ggplot()+
+  geom_line(data=df2,aes(x=Date,y=accident_number)) +
+  xlab("Date")+
+  ylab("Number of Accidents")
+```
+
+### Chart C
+
+```{r}
+ggplot()+
+  geom_line(data=df3,aes(x=Date,y=accident_number)) +
+  xlab("Date")+
+  ylab("Number of Accidents")
+```
+

@@ -155,6 +155,15 @@ plot(density(rnorm(30)))The plot above looks a little off. It seems a little sk
     </item>
     
     <item>
+      <title>Time Series Analysis Graphing</title>
+      <link>/post/time_series_analysis.graphing/</link>
+      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
+      
+      <guid>/post/time_series_analysis.graphing/</guid>
+      <description>df &amp;lt;- Batting%&amp;gt;%group_by(playerID)%&amp;gt;%summarize(Career_HR = sum(HR),Career_SO = sum(SO))%&amp;gt;%filter(Career_HR &amp;gt;= 400)head(df)## # A tibble: 6 x 3## playerID Career_HR Career_SO## &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;## 1 aaronha01 755 1383## 2 bagweje01 449 1558## 3 bankser01 512 1236## 4 beltrad01 445 1584## 5 beltrca01 421 1693## 6 bondsba01 762 1539HR_vs_SO &amp;lt;- inner_join(df,Master,by=c(&amp;quot;playerID&amp;quot;))%&amp;gt;%select(nameFirst,nameLast,Career_HR,Career_SO)HR_vs_SO$name &amp;lt;-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)head(HR_vs_SO)## # A tibble: 6 x 5## nameFirst nameLast Career_HR Career_SO name## &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;## 1 Hank Aaron 755 1383 Hank Aaron## 2 Jeff Bagwell 449 1558 Jeff Bagwell## 3 Ernie Banks 512 1236 Ernie Banks## 4 Adrian Beltre 445 1584 Adrian Beltre## 5 Carlos Beltran 421 1693 Carlos Beltran## 6 Barry Bonds 762 1539 Barry BondsNow for the timeseries analysis with GGiraph</description>
+    </item>
+    
+    <item>
       <title>Graphing Scatterplots with Ggiraph</title>
       <link>/post/scatterplots_ggiraph/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
