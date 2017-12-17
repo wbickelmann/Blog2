@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Difference Between Statistics and Machine Learning</title>
+      <link>/post/post10/</link>
+      <pubDate>Mon, 23 Oct 2017 18:25:22 +0530</pubDate>
+      
+      <guid>/post/post10/</guid>
+      <description>Both seek to make sense of data and provide methods of prediction and classification. In practice there is similar reliance on methods such as linear and logistic regression as well as resampling methods. The metrics of success in the respective fields. For example: a statistician is likely to measure the merits of a model for instance in terms of a p-value or an R-squared (focusing on the statistical significance or variance explained).</description>
+    </item>
+    
+    <item>
       <title>K Nearest Neighbors</title>
       <link>/post/post9/</link>
       <pubDate>Mon, 23 Oct 2017 18:25:22 +0530</pubDate>
