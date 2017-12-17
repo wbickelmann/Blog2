@@ -1,7 +1,7 @@
 ---
-title: "Graphing with Ggiraph"
-author: "William Taylor Bickelmann"
-date: 2015-07-23T21:13:14-05:00
+title: "Normal Distribution"
+author: "William T. Bickelmann"
+date: 2017-09-24T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 ---
@@ -10,30 +10,19 @@ tags: ["R Markdown", "plot", "regression"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
+# R Markdown
+
+The normal distribution is an extremely important concept for statistics. The assumption of a normal distribution is the only thing that allows for a number of statistical techniques, such as linear regression. 
+
+The greater the number of observations, the more likely the distribution will look normal. 
+
+For example a varible with only 30 observations looks a little off:
+```{r cars}
+plot(density(rnorm(30)))
+```
+The plot above looks a little off. It seems a little skewed to the right. Lets try again with 10 times the number of observations
 
 ```{r}
-library(Lahman)
-library(dplyr)
-library(ggplot2)
-library(ggiraph)
+plot(density(rnorm(300)))
 ```
-
-```{r}
-df<-Teams%>%
-  filter(yearID == 1980)%>%
-  select(name, HR)%>%
-  arrange(HR)
-df$name<-factor(df$name, levels = df$name)
-
-g<-ggplot() +
-  geom_bar_interactive(data = df, aes(x = name, y = HR, tooltip = HR, data_id = name), stat = "identity", color = "blue", fill = "white") +
-  coord_flip()+
-  ggtitle("1980 Team Homeruns")+
-  ylab("Homeruns")+
-  xlab("Team Name")
-
-ggiraph(code = print(g), hover_css = "fill:red;stroke:black")
-```
-
-
-
+This definitely looks better. But lets see if it will look even better if we add another zero onto the number of observations

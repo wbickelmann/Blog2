@@ -3,59 +3,153 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/post9/</loc>
+    <lastmod>2017-10-23T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/post8/</loc>
+    <lastmod>2017-10-23T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/post7/</loc>
+    <lastmod>2017-10-16T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/bar_hist_charts/</loc>
+    <lastmod>2017-10-09T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/ggiraph/</loc>
+    <lastmod>2017-10-09T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/post6/</loc>
+    <lastmod>2017-10-09T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/inf/</loc>
     <lastmod>2017-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2015-07-23-r-rmarkdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <loc>/post/post5/</loc>
+    <lastmod>2017-10-02T18:25:22+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
+    <loc>/post/interactive_viz/</loc>
+    <lastmod>2017-09-25T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/post1/</loc>
+    <lastmod>2017-09-25T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/post2/</loc>
+    <lastmod>2017-09-25T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/post3/</loc>
+    <lastmod>2017-09-25T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/post4/</loc>
+    <lastmod>2017-09-25T18:25:22+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2015-07-23-r-rmarkdown/</loc>
+    <lastmod>2017-09-24T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/presentation/aenean-odio-orci-mmxii/</loc>
+    <lastmod>2016-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/practicetest/</loc>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-23T18:25:22+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/felis/</loc>
+    <lastmod>2016-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/topics/molestie/</loc>
+    <lastmod>2016-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2017-09-25T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-23T18:25:22+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <loc>/presentation/</loc>
+    <lastmod>2016-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2017-09-25T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2017-09-25T21:13:14-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/topics/rhoncus/</loc>
+    <lastmod>2016-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2016-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/topics/</loc>
+    <lastmod>2016-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/venetais/</loc>
+    <lastmod>2016-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

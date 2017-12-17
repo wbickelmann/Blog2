@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Topics on Analytics Talk</title>
+    <link>/topics/</link>
+    <description>Recent content in Topics on Analytics Talk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 20YY, Your Name Here; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 29 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/topics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Molestie</title>
+      <link>/topics/molestie/</link>
+      <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/topics/molestie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rhoncus</title>
+      <link>/topics/rhoncus/</link>
+      <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/topics/rhoncus/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

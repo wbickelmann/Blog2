@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Analytics Talk</title>
+    <link>https://analyticstalk.netlify.com/project/</link>
+    <description>Recent content in Projects on Analytics Talk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 20YY, Your Name Here; all rights reserved.</copyright>
+    
+	<atom:link href="https://analyticstalk.netlify.com/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ggiraph</title>
+      <link>https://analyticstalk.netlify.com/project/ggiraph1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://analyticstalk.netlify.com/project/ggiraph1/</guid>
+      <description>library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)library(ggiraph)df&amp;lt;-Teams%&amp;gt;%filter(yearID == 1980)%&amp;gt;%select(name, HR)%&amp;gt;%arrange(HR)df$name&amp;lt;-factor(df$name, levels = df$name)g&amp;lt;-ggplot() +geom_bar_interactive(data = df, aes(x = name, y = HR, tooltip = HR, data_id = name), stat = &amp;quot;identity&amp;quot;, color = &amp;quot;blue&amp;quot;, fill = &amp;quot;white&amp;quot;) +coord_flip()+ggtitle(&amp;quot;1980 Team Homeruns&amp;quot;)+ylab(&amp;quot;Homeruns&amp;quot;)+xlab(&amp;quot;Team Name&amp;quot;)ggiraph(code = print(g), hover_css = &amp;quot;fill:red;stroke:black&amp;quot;){&#34;</description>
+    </item>
+    
+  </channel>
+</rss>

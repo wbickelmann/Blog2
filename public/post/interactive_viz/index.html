@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="keywords" content="R Markdown, plot, regression, ">
+
+ 
+<meta property="og:type" content="article"/>
+<meta property="og:description" content=""/>
+<meta property="og:title" content="Visualization Practice : https://analyticstalk.netlify.com/"/>
+<meta property="og:site_name" content="https://analyticstalk.netlify.com/ is William T. Bickelmann"/>
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="/post/interactive_viz/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2017-09-25"/>
+<meta property="article:modified_time" content="2017-09-25"/>
+
+
+
+<meta property="article:tag" content="R Markdown">
+<meta property="article:tag" content="plot">
+<meta property="article:tag" content="regression">
+
+
+
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@nixon.example">
+<meta name="twitter:title" content="Visualization Practice : https://analyticstalk.netlify.com/">
+<meta name="twitter:creator" content="@nixon.example">
+<meta name="twitter:description" content="">
+<meta name="twitter:image:src" content="">
+<meta name="twitter:domain" content="https://analyticstalk.netlify.com/">
+
+
+
+    <base href="/">
+    <title>Visualization Practice - https://analyticstalk.netlify.com/</title>
+    <link rel="canonical" href="/post/interactive_viz/">
+    
+
+    <link href='//fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/nixon.css">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+</head>
+
+<body lang="en" itemscope itemtype="http://schema.org/Article">
+<header id="header">
+    <figure>
+      <a href="/" border=0 id="logolink"><div class="icon-nixon-home" id="logo"> </div></a>
+    </figure>
+    <div id="byline">by William T. Bickelmann</div>
+    <nav id="nav">
+            <ul id="mainnav">
+            <li>
+                <a href="/post/">
+                <span class="icon"> <i aria-hidden="true" class="icon-nixon-quill"></i></span>
+                <span> blog </span>
+            </a>
+            </li>
+            <li>
+            <a href="/project/">
+                <span class="icon"> <i aria-hidden="true" class="icon-nixon-console"></i></span>
+                <span> code </span>
+            </a>
+            </li>
+            <li>
+            <a href="/presentation/">
+                <span class="icon"> <i aria-hidden="true" class="icon-nixon-talk"></i></span>
+                <span> talks </span>
+            </a>
+            </li>
+            <li>
+            <a href="https://wbickelmann-career.000webhostapp.com/">
+                <span class="icon"> <i aria-hidden="true" class="icon-nixon-me"></i></span>
+                <span> me </span>
+            </a>
+            </li>
+        </ul>
+
+    <ul id="social">
+	<li id="share">
+		<span class="icon icon-bubbles"> </span><span class="title"> share </span>
+		<div class="dropdown share">
+			<ul class="social">
+				<li>
+					<a href="https://twitter.com/intent/tweet?status=Visualization%20Practice-%2fpost%2finteractive_viz%2f" target="_blank" title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=%2fpost%2finteractive_viz%2f" target="_blank" title="Join me on Facebook" class="facebook"><span class="icon icon-facebook"></span>Facebook</a>
+				</li>
+				<li>
+					<a href="https://plus.google.com/share?url=%2fpost%2finteractive_viz%2f" target="_blank" title="Google+" class="googleplus"><span class="icon icon-google-plus"></span>Google+</a>
+				</li>
+
+				<li>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=%2fpost%2finteractive_viz%2f&title=Visualization%20Practice&source=nixon.example" target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a>
+				</li>
+
+				<li>
+					<a href="http://del.icio.us/post?url=%2fpost%2finteractive_viz%2f" target="_blank" title="Delicious" class="delicious"><span class="icon icon-delicious"></span>Delicious</a>
+				</li>
+				<li>
+					<a href="http://www.reddit.com/submit?url=%2fpost%2finteractive_viz%2f" target="_blank" title="Reddit" class="reddit"><span class="icon icon-reddit"></span>Reddit</a>
+				</li>
+				<li>
+					<a href="http://www.stumbleupon.com/submit?url=%2fpost%2finteractive_viz%2f" target="_blank" title="StumbleUpon" class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a>
+				</li>
+			</ul>
+			<span class="subcount">sharing is caring</span>
+		</div>
+	</li>
+	<li id="follow">
+		<span class="icon icon-rocket"> </span><span class="title"> follow </span>
+		<div class="dropdown follow">
+			<ul class="social">
+
+				<li>
+					<a href="http://feeds.feedburner.com/nixon.example" target="_blank" title="Subscribe by RSS" class="rss"><span class="icon icon-feed-2"></span>RSS</a>
+				</li>
+
+
+				<li>
+					<a href="http://www.twitter.com/nixon.example" target="_blank" title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a>
+				</li>
+
+
+				<li>
+					<a href="http://www.facebook.com/nixon.example" target="_blank" title="Join me on Facebook" class="facebook"><span class="icon icon-facebook"></span>Facebook</a>
+				</li>
+
+
+				<li>
+					<a href="http://www.linkedin.com/in/nixon.example" target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a>
+				</li>
+
+
+				<li>
+					<a href="http://github.com/nixon.example" target="_blank" title="GitHub" class="github"><span class="icon icon-github"></span>GitHub</a>
+				</li>
+
+
+
+				<li>
+					<a href="http://slideshare.com/nixon.example" target="_blank" title="SlideShare" class="slideshare"><span class="icon icon-slideshare"></span>SlideShare</a>
+				</li>
+
+			</ul>
+			<span class="subcount">join 10k+ subscribers &amp; followers</span>
+		</div>
+	</li>
+</ul>
+
+    </nav>
+</header>
+
+
+
+<section id="main">
+  <h1 itemprop="name" id="title">Visualization Practice</h1>
+  <div>
+        <article itemprop="articleBody" id="content">
+           <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/d3/d3.min.js"></script>
+<script src="/rmarkdown-libs/d3-lasso/d3-lasso.min.js"></script>
+<link href="/rmarkdown-libs/ggiraph/styles.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/ggiraph-binding/ggiraph.js"></script>
+<script src="/rmarkdown-libs/uid1ecaa538e2c711e7923f3fd2b292244d/scripts_uid1ecaa538e2c711e7923f3fd2b292244d.js"></script>
+
+
+<pre class="r"><code>library(Lahman)
+library(dplyr)
+## 
+## Attaching package: &#39;dplyr&#39;
+## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag
+## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union
+library(ggplot2)
+library(ggiraph)</code></pre>
+<p>First to Wrangel Data</p>
+<pre class="r"><code>Batting%&gt;%
+  group_by(playerID)%&gt;%
+  summarize(Career_HR=sum(HR),Career_SO=sum(SO))%&gt;%
+  filter(Career_HR&gt;=400)-&gt;df</code></pre>
+<p>Now an Inner Join</p>
+<pre class="r"><code>HR_vs_SO&lt;-inner_join(df,Master,by=c(&quot;playerID&quot;))%&gt;%
+  select(nameFirst,nameLast,Career_HR,Career_SO)</code></pre>
+<div id="section" class="section level1">
+<h1>———————————————————————————-</h1>
+<p>Next to make it a visualization</p>
+<pre class="r"><code>
+g&lt;-ggplot()+
+  geom_point(data=HR_vs_SO, aes(x=Career_SO,y=Career_HR)) +
+  ggtitle(&quot;Career Homeruns vs. Strikeouts for Great Hitters&quot;) +
+  xlab(&quot;Strikeouts&quot;) +
+  ylab(&quot;Homeruns&quot;)
+g</code></pre>
+<p><img src="/post/Interactive_viz_files/figure-html/unnamed-chunk-4-1.png" width="672" /> Now to make it interactive</p>
+<pre class="r"><code>ggiraph(code=print(g),hover_css=&quot;fill:white;stroke:black&quot;)</code></pre>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="ggiraph html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"html":"<div id='uid1ecaa538e2c711e7923f3fd2b292244d' class='ggiraph-container' ><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"svg_1\" viewBox=\"0 0 432.00 432.00\" class=\"svg-responsive-container\">\n  <g>\n    <defs>\n      <clipPath id=\"cl1_0\">\n        <rect x=\"0.00\" y=\"432.00\" width=\"0.00\" height=\"0.00\"/>\n      \u003c/clipPath>\n    \u003c/defs>\n    <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\" id=\"1\" clip-path=\"url(#cl1_0)\" fill=\"#FFFFFF\" fill-opacity=\"1\" stroke-width=\"0.75\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <defs>\n      <clipPath id=\"cl1_1\">\n        <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\"/>\n      \u003c/clipPath>\n    \u003c/defs>\n    <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\" id=\"2\" clip-path=\"url(#cl1_1)\" fill=\"#FFFFFF\" fill-opacity=\"1\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <defs>\n      <clipPath id=\"cl1_2\">\n        <rect x=\"38.92\" y=\"21.51\" width=\"387.60\" height=\"380.15\"/>\n      \u003c/clipPath>\n    \u003c/defs>\n    <rect x=\"38.92\" y=\"21.51\" width=\"387.60\" height=\"380.15\" id=\"3\" clip-path=\"url(#cl1_2)\" fill=\"#EBEBEB\" fill-opacity=\"1\" stroke=\"none\"/>\n    <polyline points=\"38.92,342.52 426.52,342.52\" id=\"4\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,245.17 426.52,245.17\" id=\"5\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,147.82 426.52,147.82\" id=\"6\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,50.47 426.52,50.47\" id=\"7\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"66.55,401.66 66.55,21.51\" id=\"8\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"159.23,401.66 159.23,21.51\" id=\"9\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"251.91,401.66 251.91,21.51\" id=\"10\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"344.58,401.66 344.58,21.51\" id=\"11\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"0.533489\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,391.19 426.52,391.19\" id=\"12\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,293.84 426.52,293.84\" id=\"13\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,196.49 426.52,196.49\" id=\"14\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"38.92,99.14 426.52,99.14\" id=\"15\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"112.89,401.66 112.89,21.51\" id=\"16\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"205.57,401.66 205.57,21.51\" id=\"17\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"298.24,401.66 298.24,21.51\" id=\"18\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"390.92,401.66 390.92,21.51\" id=\"19\" clip-path=\"url(#cl1_2)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#FFFFFF\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <circle cx=\"183.88\" cy=\"45.60\" r=\"1.47pt\" id=\"20\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"216.32\" cy=\"343.49\" r=\"1.47pt\" id=\"21\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"156.63\" cy=\"282.16\" r=\"1.47pt\" id=\"22\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"221.14\" cy=\"347.38\" r=\"1.47pt\" id=\"23\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"241.34\" cy=\"370.75\" r=\"1.47pt\" id=\"24\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"212.80\" cy=\"38.79\" r=\"1.47pt\" id=\"25\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"208.53\" cy=\"346.41\" r=\"1.47pt\" id=\"26\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"287.49\" cy=\"330.83\" r=\"1.47pt\" id=\"27\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"207.23\" cy=\"354.20\" r=\"1.47pt\" id=\"28\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"250.98\" cy=\"320.13\" r=\"1.47pt\" id=\"29\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"368.49\" cy=\"330.83\" r=\"1.47pt\" id=\"30\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"188.88\" cy=\"377.56\" r=\"1.47pt\" id=\"31\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"170.53\" cy=\"260.74\" r=\"1.47pt\" id=\"32\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"73.96\" cy=\"300.66\" r=\"1.47pt\" id=\"33\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"218.91\" cy=\"352.25\" r=\"1.47pt\" id=\"34\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"163.49\" cy=\"358.09\" r=\"1.47pt\" id=\"35\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"257.28\" cy=\"167.29\" r=\"1.47pt\" id=\"36\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"110.11\" cy=\"343.49\" r=\"1.47pt\" id=\"37\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"408.90\" cy=\"232.51\" r=\"1.47pt\" id=\"38\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"251.54\" cy=\"358.09\" r=\"1.47pt\" id=\"39\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"188.70\" cy=\"324.99\" r=\"1.47pt\" id=\"40\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"242.45\" cy=\"222.78\" r=\"1.47pt\" id=\"41\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"264.14\" cy=\"350.30\" r=\"1.47pt\" id=\"42\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"185.36\" cy=\"353.23\" r=\"1.47pt\" id=\"43\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"244.49\" cy=\"258.80\" r=\"1.47pt\" id=\"44\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"203.16\" cy=\"282.16\" r=\"1.47pt\" id=\"45\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"210.39\" cy=\"138.08\" r=\"1.47pt\" id=\"46\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"214.83\" cy=\"273.40\" r=\"1.47pt\" id=\"47\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"276.37\" cy=\"300.66\" r=\"1.47pt\" id=\"48\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"223.36\" cy=\"213.04\" r=\"1.47pt\" id=\"49\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"208.53\" cy=\"289.95\" r=\"1.47pt\" id=\"50\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"56.54\" cy=\"318.18\" r=\"1.47pt\" id=\"51\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"251.91\" cy=\"253.93\" r=\"1.47pt\" id=\"52\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"93.61\" cy=\"283.13\" r=\"1.47pt\" id=\"53\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"177.39\" cy=\"226.67\" r=\"1.47pt\" id=\"54\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"133.83\" cy=\"364.91\" r=\"1.47pt\" id=\"55\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"122.71\" cy=\"205.25\" r=\"1.47pt\" id=\"56\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"263.58\" cy=\"240.30\" r=\"1.47pt\" id=\"57\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"169.42\" cy=\"361.01\" r=\"1.47pt\" id=\"58\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"211.50\" cy=\"210.12\" r=\"1.47pt\" id=\"59\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"351.44\" cy=\"103.04\" r=\"1.47pt\" id=\"60\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"174.06\" cy=\"85.52\" r=\"1.47pt\" id=\"61\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"276.56\" cy=\"247.11\" r=\"1.47pt\" id=\"62\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"144.58\" cy=\"285.08\" r=\"1.47pt\" id=\"63\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"156.82\" cy=\"384.38\" r=\"1.47pt\" id=\"64\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"261.73\" cy=\"379.51\" r=\"1.47pt\" id=\"65\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"354.96\" cy=\"187.73\" r=\"1.47pt\" id=\"66\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"286.38\" cy=\"318.18\" r=\"1.47pt\" id=\"67\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"194.63\" cy=\"382.43\" r=\"1.47pt\" id=\"68\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"186.47\" cy=\"273.40\" r=\"1.47pt\" id=\"69\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"399.82\" cy=\"184.81\" r=\"1.47pt\" id=\"70\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"121.41\" cy=\"365.88\" r=\"1.47pt\" id=\"71\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"58.95\" cy=\"273.40\" r=\"1.47pt\" id=\"72\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"240.04\" cy=\"327.91\" r=\"1.47pt\" id=\"73\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <circle cx=\"185.73\" cy=\"340.57\" r=\"1.47pt\" id=\"74\" clip-path=\"url(#cl1_2)\" fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.708661\" stroke=\"#000000\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n    <defs>\n      <clipPath id=\"cl1_3\">\n        <rect x=\"0.00\" y=\"0.00\" width=\"432.00\" height=\"432.00\"/>\n      \u003c/clipPath>\n    \u003c/defs>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"394.41\" id=\"75\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">400\u003c/text>\n    \u003c/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"297.06\" id=\"76\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">500\u003c/text>\n    \u003c/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"199.71\" id=\"77\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">600\u003c/text>\n    \u003c/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"18.97\" y=\"102.36\" id=\"78\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">700\u003c/text>\n    \u003c/g>\n    <polyline points=\"36.18,391.19 38.92,391.19\" id=\"79\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"36.18,293.84 38.92,293.84\" id=\"80\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"36.18,196.49 38.92,196.49\" id=\"81\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"36.18,99.14 38.92,99.14\" id=\"82\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"112.89,404.40 112.89,401.66\" id=\"83\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"205.57,404.40 205.57,401.66\" id=\"84\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"298.24,404.40 298.24,401.66\" id=\"85\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <polyline points=\"390.92,404.40 390.92,401.66\" id=\"86\" clip-path=\"url(#cl1_3)\" fill=\"none\" stroke-width=\"1.06698\" stroke=\"#333333\" stroke-opacity=\"1\" stroke-linejoin=\"round\" stroke-linecap=\"butt\"/>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"102.88\" y=\"413.03\" id=\"87\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">1000\u003c/text>\n    \u003c/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"195.56\" y=\"413.03\" id=\"88\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">1500\u003c/text>\n    \u003c/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"288.23\" y=\"413.03\" id=\"89\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">2000\u003c/text>\n    \u003c/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"380.91\" y=\"413.03\" id=\"90\" font-size=\"6.60pt\" fill=\"#4D4D4D\" fill-opacity=\"1\" font-family=\"Arial\">2500\u003c/text>\n    \u003c/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"208.27\" y=\"426.38\" id=\"91\" font-size=\"8.25pt\" font-family=\"Arial\">Strikeouts\u003c/text>\n    \u003c/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text transform=\"translate(13.35,236.95) rotate(-90)\" id=\"92\" font-size=\"8.25pt\" font-family=\"Arial\">Homeruns\u003c/text>\n    \u003c/g>\n    <g clip-path=\"url(#cl1_3)\">\n      <text x=\"38.92\" y=\"14.79\" id=\"93\" font-size=\"9.90pt\" font-family=\"Arial\">Career Homeruns vs. Strikeouts for Great Hitters\u003c/text>\n    \u003c/g>\n  \u003c/g>\n\u003c/svg>\n<div class='ggiraph-toolbar'><div class='ggiraph-toolbar-block shinyonly'><a class='ggiraph-toolbar-icon neutral' title='lasso selection' href='javascript:lasso_on(\"uid1ecaa538e2c711e7923f3fd2b292244d\", true, \"array_selected_uid1ecaa538e2c711e7923f3fd2b292244d\", \"clicked_uid1ecaa538e2c711e7923f3fd2b292244d\");'><svg width='1.5em' height='1.5em' viewBox='0 0 230 230'><g><ellipse ry='65.5' rx='86.5' cy='94' cx='115.5' stroke-width='20' fill='transparent'/><ellipse ry='11.500001' rx='10.5' cy='153' cx='91.5' stroke-width='20' fill='transparent'/><line y2='210.5' x2='105' y1='164.5' x1='96' stroke-width='20'/>\u003c/g>\u003c/svg>\u003c/a><a class='ggiraph-toolbar-icon drop' title='lasso anti-selection' href='javascript:lasso_on(\"uid1ecaa538e2c711e7923f3fd2b292244d\", false, \"array_selected_uid1ecaa538e2c711e7923f3fd2b292244d\", \"clicked_uid1ecaa538e2c711e7923f3fd2b292244d\");'><svg width='1.5em' height='1.5em' viewBox='0 0 230 230'><g><ellipse ry='65.5' rx='86.5' cy='94' cx='115.5' stroke-width='20' fill='transparent'/><ellipse ry='11.500001' rx='10.5' cy='153' cx='91.5' stroke-width='20' fill='transparent'/><line y2='210.5' x2='105' y1='164.5' x1='96' stroke-width='20'/>\u003c/g>\u003c/svg>\u003c/a>\u003c/div>\u003c/div><style>div.tooltip_uid1ecaa538e2c711e7923f3fd2b292244d {position:absolute;pointer-events:none;z-index:999;padding:5px;background:black;color:white;border-radius:2px 2px 2px 2px;}\n.cl_data_id_uid1ecaa538e2c711e7923f3fd2b292244d:{}.cl_data_id_uid1ecaa538e2c711e7923f3fd2b292244d:hover{fill:white;stroke:black}\n.clicked_uid1ecaa538e2c711e7923f3fd2b292244d{fill:white;stroke:black}\u003c/style>\u003c/div>","uid":"uid1ecaa538e2c711e7923f3fd2b292244d","funname":"init_prop_uid1ecaa538e2c711e7923f3fd2b292244d","sel_array_name":"array_selected_uid1ecaa538e2c711e7923f3fd2b292244d","selected_class":"clicked_uid1ecaa538e2c711e7923f3fd2b292244d","tooltip_opacity":0.9,"tooltip_offx":10,"tooltip_offy":0,"zoom_max":1,"use_wh":false,"width":"80%","selection_type":"multiple","flexdashboard":false},"evals":[],"jsHooks":[]}</script>
+</div>
+
+        </article>
+  </div>
+</section>
+
+
+
+<aside id="meta">
+
+<div>
+	<section id="datecount">
+		<h4 id="date"> Mon Sep 25, 2017 </h4>
+		<h5 id="wc"> 300 Words </h5>
+		<h5 id="readtime"> Read in about 2 Min </h5>
+	</section>
+	<ul id="categories">
+	
+	</ul>
+	<ul id="tags">
+	
+		<li> <a href="//tags/r-markdown">R Markdown</a> </li>
+	
+		<li> <a href="//tags/plot">plot</a> </li>
+	
+		<li> <a href="//tags/regression">regression</a> </li>
+	
+	</ul>
+</div>
+
+<div>
+	<section id="prev">
+		&nbsp;<a class="previous" href="/post/post5/"><i class="icon-nixon-arrow-left"></i> White Nationalism in America</a><br>
+	</section>
+	<section id="next">
+		&nbsp;<a class="next" href="/post/post1/">Anti-White Rhetoric and Crime in South Africa <i class="icon-nixon-arrow-right"></i></a>
+	</section>
+</div>
+
+
+<div>
+	<section id="author">
+		<h4>About the Author:</h4>
+		<p>William T. Bickelmann:
+Analyst, Data Scientist, Writer</p>
+	</section>
+</div>
+
+</aside>
+
+<meta itemprop="wordCount" content="226">
+<meta itemprop="datePublished" content="2017-09-25">
+<meta itemprop="url" content="/post/interactive_viz/">
+
+
+<aside id=comments>
+    <div><h2> Comments </h2></div>
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "analyticstalk.netlify" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</aside>
+
+<footer>
+	<div>
+		<p>
+			Content &copy; 2016
+			
+				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+					<span itemprop="name">William T. Bickelmann.</span>
+				</span>
+			
+			<a rel="license" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>; 
+			please attribute properly and link back.
+			<br>
+			Powered by <a href="http://gohugo.io">Hugo</a>.
+		</p>
+	</div>
+</footer>
+<script type="text/javascript">
+(function(){var j=function(a,b){return window.getComputedStyle?getComputedStyle(a).getPropertyValue(b):a.currentStyle[b]};var k=function(a,b,c){if(a.addEventListener)a.addEventListener(b,c,false);else a.attachEvent('on'+b,c)};var l=function(a,b){for(key in b)if(b.hasOwnProperty(key))a[key]=b[key];return a};window.fitText=function(d,e,f){var g=l({'minFontSize':-1/0,'maxFontSize':1/0},f);var h=function(a){var b=e||1;var c=function(){a.style.fontSize=Math.max(Math.min(a.clientWidth/(b*10),parseFloat(g.maxFontSize)),parseFloat(g.minFontSize))+'px'};c();k(window,'resize',c)};if(d.length)for(var i=0;i<d.length;i++)h(d[i]);else h(d);return d}})();
+fitText(document.getElementById('title'), 1)
+</script>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>
+
