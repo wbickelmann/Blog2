@@ -201,6 +201,20 @@ plot(density(rnorm(30)))The plot above looks a little off. It seems a little sk
 </article>
 
     
+        <article class="post">
+    <header>
+      <h2><a href="/post/scatterplots_ggiraph/">Graphing Scatterplots with Ggiraph </a> </h2>
+      <div class="post-meta">Thu, Jul 23, 2015 -  Read in 3 Min </div>
+    </header>
+
+    library(Lahman)library(dplyr)## ## Attaching package: &#39;dplyr&#39;## The following objects are masked from &#39;package:stats&#39;:## ## filter, lag## The following objects are masked from &#39;package:base&#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)library(ggiraph)This post is about using ggiraph to make an interactive scaterplot
+df &lt;- Batting%&gt;%group_by(playerID)%&gt;%summarize(Career_HR = sum(HR),Career_SO = sum(SO))%&gt;%filter(Career_HR &gt;= 400)df## # A tibble: 55 x 3## playerID Career_HR Career_SO## &lt;chr&gt; &lt;int&gt; &lt;int&gt;## 1 aaronha01 755 1383## 2 bagweje01 449 1558## 3 bankser01 512 1236## 4 beltrad01 445 1584## 5 beltrca01 421 1693## 6 bondsba01 762 1539## 7 cabremi01 446 1516## 8 cansejo01 462 1942## 9 dawsoan01 438 1509## 10 delgaca01 473 1745## # .
+    <footer>
+        <a href='/post/scatterplots_ggiraph/'><nobr>Read more →</nobr></a>
+    </footer>
+</article>
+
+    
   </div>
 </section>
 

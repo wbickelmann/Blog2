@@ -1,0 +1,53 @@
+---
+title: "Graphing Scatterplots with Ggiraph"
+author: "William Taylor Bickelmann"
+date: 2015-07-23T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+
+```{r}
+library(Lahman)
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+```
+
+This post is about using ggiraph to make an interactive scaterplot
+
+```{r}
+df <- Batting%>%
+      group_by(playerID)%>%
+      summarize(Career_HR = sum(HR),Career_SO = sum(SO))%>%
+      filter(Career_HR >= 400)
+df
+```
+
+Next we will use a join to join the master table and the df dataframe
+```{r}
+HR_vs_SO <- inner_join(df,Master,by=c("playerID"))%>%
+            select(nameFirst,nameLast,Career_HR,Career_SO)
+```
+
+```{r}
+HR_vs_SO$name <-paste(HR_vs_SO$nameFirst,HR_vs_SO$nameLast)
+HR_vs_SO
+```
+
+```{r}
+g<-ggplot()+
+  geom_point_interactive(data = HR_vs_SO, aes(x=Career_SO,y=Career_HR,tooltip=name,data_id=nameLast))+
+  ggtitle("Career Homeruns vs Strikeouts for Great Hitters")+
+  xlab("Career Strikouts")+
+  ylab("Career Homeruns")
+```
+
+```{r}
+ggiraph(code=print(g),hover_css="fill:white;stroke:black")
+```
+By holding your cursor over each point it will tell you the player in question

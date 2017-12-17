@@ -155,6 +155,16 @@ plot(density(rnorm(30)))The plot above looks a little off. It seems a little sk
     </item>
     
     <item>
+      <title>Graphing Scatterplots with Ggiraph</title>
+      <link>/post/scatterplots_ggiraph/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/post/scatterplots_ggiraph/</guid>
+      <description>library(Lahman)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(ggplot2)library(ggiraph)This post is about using ggiraph to make an interactive scaterplot
+df &amp;lt;- Batting%&amp;gt;%group_by(playerID)%&amp;gt;%summarize(Career_HR = sum(HR),Career_SO = sum(SO))%&amp;gt;%filter(Career_HR &amp;gt;= 400)df## # A tibble: 55 x 3## playerID Career_HR Career_SO## &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;## 1 aaronha01 755 1383## 2 bagweje01 449 1558## 3 bankser01 512 1236## 4 beltrad01 445 1584## 5 beltrca01 421 1693## 6 bondsba01 762 1539## 7 cabremi01 446 1516## 8 cansejo01 462 1942## 9 dawsoan01 438 1509## 10 delgaca01 473 1745## # .</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>/post/practicetest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
